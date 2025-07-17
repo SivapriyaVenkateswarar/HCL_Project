@@ -1,12 +1,11 @@
 try:
     # Open files
-    file1 = open("D:\Speechtech\Hindi\words_subset\count_subset_phonemes.txt", "r")
-    file2 = open("D:/Speechtech/Hindi/words_subset/count.txt", "w+")
-    file3 = open("D:/Speechtech/Hindi/words_subset/phonemes.txt", "w+")
+    file1 = open("D:/Speechtech/Hindi/syllable_subset/count_subset_phonemes.txt", "r")
+    file2 = open("D:/Speechtech/Hindi/syllable_subset/count.txt", "w+")
+    file3 = open("D:/Speechtech/Hindi/syllable_subset/phonemes.txt", "w+")
     
     # Read content
     content = file1.readlines()
-    print("hi")
     print(content)
     
     # Process each line
