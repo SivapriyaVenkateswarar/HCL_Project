@@ -12,7 +12,7 @@ def dump_registry_tree(key, indent=0):
 
         # Get all values under this key
         try:
-            values = key.get_values()  # ✅ FIXED: using get_values() instead of .values
+            values = key.get_values()  
             for value in values:
                 value_name = value.name if value.name else "(default)"
                 print('  ' * (indent + 1) + f"- {value_name}: {value.value}")
@@ -42,4 +42,5 @@ for profile in user_profiles:
             print(f"[!] Error opening registry for {profile}: {e}")
 
     else:
-        print(f"[❌] NTUSER.DAT not found for {profile}")
+        print(f"NTUSER.DAT not found for {profile}")
+
